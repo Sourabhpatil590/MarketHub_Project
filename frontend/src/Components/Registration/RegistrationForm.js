@@ -32,7 +32,7 @@ const RegistrationForm = () => {
     e.preventDefault();
 
     client
-      .post("/register", FormData)
+      .post("/api/register", FormData)
       .then((response) => setResponse(response.data))
       .catch((error) => console.log(error));
     console.log(response);
