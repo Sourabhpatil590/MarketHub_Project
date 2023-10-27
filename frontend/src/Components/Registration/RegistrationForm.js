@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import "./registrationform.css";
 
 axios.defaults.xsrfCookieName = "csrftoken";
 axios.defaults.xsrfHeaderName = "X-CSRFToken";
@@ -32,7 +33,7 @@ const RegistrationForm = () => {
     e.preventDefault();
 
     client
-      .post("/register", FormData)
+      .post("/api/register", FormData)
       .then((response) => setResponse(response.data))
       .catch((error) => console.log(error));
     console.log(response);
@@ -48,7 +49,7 @@ const RegistrationForm = () => {
   return (
     <div>
       <h2>User Registration</h2>
-      <form onSubmit={handleSubmit}>
+      <form className="registration-form" onSubmit={handleSubmit}>
         <label htmlFor="firstName">First Name:</label>
         <input
           type="text"
