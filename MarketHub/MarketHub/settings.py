@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'ecommerce'
+    'ecommerce',
+    ''
 ]
 
 MIDDLEWARE = [
@@ -81,7 +82,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'ecommerce',
         'USER': 'root',
-        'PASSWORD': '7058124205',
+        'PASSWORD': 'Omkar@1999',
         'HOST': 'localhost',
         'PORT': 3306
     }
