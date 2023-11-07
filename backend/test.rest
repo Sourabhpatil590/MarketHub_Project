@@ -1,0 +1,19 @@
+POST http://192.168.0.102:8000/api/register
+Content-Type: application/json
+
+{ "email": "s@p.com", "password": "12345" }
+###
+
+POST http://192.168.0.102:8000/api/login 
+Content-Type: application/json
+
+{ "email": "s@p.com", "password": "12345" }
+###
+
+POST http://192.168.0.102:8000/api/logout
+Content-Type: application/json
+
+Authorization: Token aafd48afdbc480a11a687ab41216a644f19c2bb5
+{ "email": "s@p.com", "password": "12345" }
+
+###
