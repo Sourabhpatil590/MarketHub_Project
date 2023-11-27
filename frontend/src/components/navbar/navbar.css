@@ -1,0 +1,17 @@
+.navbar {
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+    background-color: #008cff;
+    padding:0.5rem;
+    border-top: 0.1rem solid black;
+    border-bottom: 0.1rem solid black;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    color: white;
+}

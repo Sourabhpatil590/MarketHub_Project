@@ -1,0 +1,10 @@
+.addtowishlist {
+    display: flex;
+    justify-content: center;
+    padding:0.1rem;
+    margin: 0.2rem;
+}
+
+.addtowishlist button {
+    padding: 0.1rem;
+}
